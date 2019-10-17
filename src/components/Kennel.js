@@ -1,20 +1,47 @@
 import React, { Component } from 'react'
+import {
+    Card, CardText, CardBody,
+    CardTitle
+} from 'reactstrap'
 import './Kennel.css'
+import AnimalCard from '../components/animal/AnimalCard'
 
 class Kennel extends Component{
+
+    styles = {
+        marginLeft: '43%',
+        marginBottom: '5%',
+        marginTop: '5%'
+    }
+
     render(){
         return (
             <div>
-                <h1>Nashville Kennels</h1>
+                <h1 style={this.styles}>Nashville Kennels</h1>
+                <section className="main-container">
+                    <Card>
+                        <CardBody>
+                            <CardTitle>Camp Bow Wow</CardTitle>
+                            <CardText>
+                                <address>470 Craighead St. Nashville
+                                    <br/>TN 37204</address>
+                            </CardText>
+                        </CardBody>
+                    </Card>
+                    <Card>
+                        <CardBody> 
+                            <CardTitle>Peace Love and Paws</CardTitle>
+                            <CardText>
+                                <address>1221 Brick Church Pike 
+                                    <br/>Nashville, TN 37207</address>
+                            </CardText>
+                        </CardBody>
+                    </Card>
+                </section>
                 <section>
-                    <div>
-                        <h3>Camp Bow Wow</h3>
-                        <address>470 Craighead St. Nashville, TN 37204</address>
-                    </div>
-                    <div>
-                        <h3>Peace Love and Paws</h3>
-                        <address>1221 Brick Church Pike, Nashville, TN 37207</address>
-                    </div>
+                    <AnimalCard />
+                    <AnimalCard />
+                    <AnimalCard />
                 </section>
             </div>
         )
