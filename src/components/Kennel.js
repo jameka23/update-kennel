@@ -19,7 +19,7 @@ class Kennel extends Component{
             <div>
                 <h1 style={this.styles}>Nashville Kennels</h1>
                 <section className="main-container">
-                    <Card>
+                    <Card className="cardKennels">
                         <CardBody>
                             <CardTitle>Camp Bow Wow</CardTitle>
                             <CardText>
@@ -28,7 +28,7 @@ class Kennel extends Component{
                             </CardText>
                         </CardBody>
                     </Card>
-                    <Card>
+                    <Card className="cardKennels">
                         <CardBody> 
                             <CardTitle>Peace Love and Paws</CardTitle>
                             <CardText>

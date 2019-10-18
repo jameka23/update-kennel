@@ -48,3 +48,24 @@ img {
   padding: 1.4em;
 }
 
+.dogImg{
+    margin-top: 15px;
+    height: 200px;
+    width: 200px;
+}
+
+.animalBody{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.animalCard{
+    margin-left: 25.7%;
+    margin-right: 25.7%;
+    margin-bottom: 2%;
+}
+
+.cardKennels{
+    margin-bottom: 2%;
+}
