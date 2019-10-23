@@ -9,9 +9,9 @@ class AnimalCard extends Component{
     render(){
         return(
             <React.Fragment>
-                <Card className="animalCard">
+                <Card className="cCard">
                     <CardImg className='dogImg' src={require('./dog.svg')} alt="dog"/>
-                    <CardBody className="animalBody">
+                    <CardBody className="cBody">
                         <CardTitle>Name:<span className="card-petname">Doodles</span></CardTitle>
                         <CardText>Breed: Poodle</CardText>
                     </CardBody>

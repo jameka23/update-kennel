@@ -54,18 +54,20 @@ img {
     width: 200px;
 }
 
-.animalBody{
+.cBody{
     display: flex;
     flex-direction: column;
     align-self: center;
 }
 
-.animalCard{
+.cCard{
     margin-left: 25.7%;
     margin-right: 25.7%;
     margin-bottom: 2%;
 }
 
 .cardKennels{
-    margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
 }

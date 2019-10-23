@@ -5,11 +5,12 @@ import {
 } from 'reactstrap'
 import './Kennel.css'
 import AnimalCard from '../components/animal/AnimalCard'
+import LocationCard from './location/LocationCard'
 
 class Kennel extends Component{
 
     styles = {
-        marginLeft: '43%',
+        marginLeft: '42%',
         marginBottom: '5%',
         marginTop: '5%'
     }
@@ -19,24 +20,7 @@ class Kennel extends Component{
             <div>
                 <h1 style={this.styles}>Nashville Kennels</h1>
                 <section className="main-container">
-                    <Card className="cardKennels">
-                        <CardBody>
-                            <CardTitle>Camp Bow Wow</CardTitle>
-                            <CardText>
-                                <address>470 Craighead St. Nashville
-                                    <br/>TN 37204</address>
-                            </CardText>
-                        </CardBody>
-                    </Card>
-                    <Card className="cardKennels">
-                        <CardBody> 
-                            <CardTitle>Peace Love and Paws</CardTitle>
-                            <CardText>
-                                <address>1221 Brick Church Pike 
-                                    <br/>Nashville, TN 37207</address>
-                            </CardText>
-                        </CardBody>
-                    </Card>
+                    <LocationCard  classname="cardKennels"/>
                 </section>
                 <section>
                     <AnimalCard />
